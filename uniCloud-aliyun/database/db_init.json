@@ -1,0 +1,210 @@
+{
+    "food_library": {
+        "data": [
+            {
+                "_id": "f_101",
+                "name": "黄瓜",
+                "purine_per_100g": 3.3,
+                "gi_value": 15,
+                "calories": 16,
+                "category": "vegetables",
+                "suitable_for": [
+                    "gout_friendly",
+                    "diabetes_friendly"
+                ],
+                "image": "https://img.yzcdn.cn/vant/cat.jpeg"
+            },
+            {
+                "_id": "f_102",
+                "name": "猪肝",
+                "purine_per_100g": 275.2,
+                "gi_value": 0,
+                "calories": 129,
+                "category": "meat",
+                "suitable_for": [],
+                "image": ""
+            },
+            {
+                "_id": "f_103",
+                "name": "燕麦",
+                "purine_per_100g": 19.8,
+                "gi_value": 55,
+                "calories": 377,
+                "category": "grains",
+                "suitable_for": [
+                    "diabetes_friendly",
+                    "gout_friendly"
+                ],
+                "image": ""
+            },
+            {
+                "_id": "f_104",
+                "name": "带鱼",
+                "purine_per_100g": 391.6,
+                "gi_value": 0,
+                "calories": 127,
+                "category": "seafood",
+                "suitable_for": [],
+                "image": ""
+            },
+            {
+                "_id": "f_105",
+                "name": "牛奶",
+                "purine_per_100g": 1.4,
+                "gi_value": 27,
+                "calories": 54,
+                "category": "others",
+                "suitable_for": [
+                    "gout_friendly",
+                    "diabetes_friendly"
+                ],
+                "image": ""
+            },
+            {
+                "_id": "f_106",
+                "name": "西红柿",
+                "purine_per_100g": 4.2,
+                "gi_value": 15,
+                "calories": 18,
+                "category": "vegetables",
+                "suitable_for": [
+                    "gout_friendly",
+                    "diabetes_friendly"
+                ],
+                "image": ""
+            },
+            {
+                "_id": "f_107",
+                "name": "西兰花",
+                "purine_per_100g": 81.0,
+                "gi_value": 15,
+                "calories": 34,
+                "category": "vegetables",
+                "suitable_for": [
+                    "diabetes_friendly"
+                ],
+                "image": ""
+            },
+            {
+                "_id": "f_108",
+                "name": "鸡胸肉",
+                "purine_per_100g": 137.4,
+                "gi_value": 0,
+                "calories": 118,
+                "category": "meat",
+                "suitable_for": [
+                    "diabetes_friendly"
+                ],
+                "image": ""
+            },
+            {
+                "_id": "f_109",
+                "name": "苹果",
+                "purine_per_100g": 0.9,
+                "gi_value": 36,
+                "calories": 53,
+                "category": "fruits",
+                "suitable_for": [
+                    "gout_friendly",
+                    "diabetes_friendly"
+                ],
+                "image": ""
+            },
+            {
+                "_id": "f_110",
+                "name": "米饭",
+                "purine_per_100g": 18.4,
+                "gi_value": 83,
+                "calories": 116,
+                "category": "grains",
+                "suitable_for": [
+                    "gout_friendly"
+                ],
+                "image": ""
+            }
+        ]
+    },
+    "recipes": {
+        "data": [
+            {
+                "_id": "r_201",
+                "title": "牛奶燕麦粥",
+                "cover_image": "https://img.yzcdn.cn/vant/apple-1.jpg",
+                "ingredients": [
+                    {
+                        "food_id": "f_103",
+                        "name": "燕麦",
+                        "amount": "50g"
+                    },
+                    {
+                        "food_id": "f_105",
+                        "name": "牛奶",
+                        "amount": "200ml"
+                    }
+                ],
+                "steps": [
+                    "将牛奶煮沸",
+                    "加入燕麦片搅拌均匀",
+                    "小火煮2分钟即可"
+                ],
+                "total_calories": 300,
+                "health_tags": [
+                    "low_purine",
+                    "low_gi"
+                ],
+                "content": "<p>这是一道非常健康的早餐...</p>"
+            },
+            {
+                "_id": "r_202",
+                "title": "凉拌黄瓜",
+                "cover_image": "https://img.yzcdn.cn/vant/apple-2.jpg",
+                "ingredients": [
+                    {
+                        "food_id": "f_101",
+                        "name": "黄瓜",
+                        "amount": "200g"
+                    }
+                ],
+                "steps": [
+                    "黄瓜洗净切片",
+                    "加入少许盐和醋拌匀"
+                ],
+                "total_calories": 40,
+                "health_tags": [
+                    "low_purine",
+                    "low_sugar",
+                    "low_fat"
+                ],
+                "content": "<p>清爽解腻...</p>"
+            },
+            {
+                "_id": "r_203",
+                "title": "西红柿炒鸡蛋",
+                "cover_image": "",
+                "ingredients": [
+                    {
+                        "food_id": "f_106",
+                        "name": "西红柿",
+                        "amount": "200g"
+                    },
+                    {
+                        "food_id": "f_111",
+                        "name": "鸡蛋(假设)",
+                        "amount": "2个"
+                    }
+                ],
+                "steps": [
+                    "鸡蛋打散炒熟备用",
+                    "西红柿切块炒出汁",
+                    "混合翻炒加盐"
+                ],
+                "total_calories": 250,
+                "health_tags": [
+                    "gout_friendly",
+                    "high_protein"
+                ],
+                "content": "<p>国民家常菜...</p>"
+            }
+        ]
+    }
+}

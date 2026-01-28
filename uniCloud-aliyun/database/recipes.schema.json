@@ -1,0 +1,93 @@
+{
+    "bsonType": "object",
+    "required": [
+        "title",
+        "ingredients"
+    ],
+    "permission": {
+        "read": true,
+        "create": "auth.role.indexOf('admin') > -1",
+        "update": "auth.role.indexOf('admin') > -1",
+        "delete": "auth.role.indexOf('admin') > -1"
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "title": {
+            "bsonType": "string",
+            "description": "菜谱标题",
+            "title": "标题",
+            "trim": "both"
+        },
+        "cover_image": {
+            "bsonType": "string",
+            "description": "封面图URL",
+            "title": "封面图"
+        },
+        "ingredients": {
+            "bsonType": "array",
+            "description": "食材列表",
+            "title": "食材",
+            "items": {
+                "bsonType": "object",
+                "required": [
+                    "food_id",
+                    "amount"
+                ],
+                "properties": {
+                    "food_id": {
+                        "bsonType": "string",
+                        "description": "关联food_library表的_id"
+                    },
+                    "name": {
+                        "bsonType": "string",
+                        "description": "食材名称快照"
+                    },
+                    "amount": {
+                        "bsonType": "string",
+                        "description": "用量，e.g. 50g"
+                    }
+                }
+            }
+        },
+        "steps": {
+            "bsonType": "array",
+            "description": "制作步骤",
+            "title": "步骤",
+            "items": {
+                "bsonType": "string"
+            }
+        },
+        "total_calories": {
+            "bsonType": "int",
+            "description": "总热量(kcal)",
+            "title": "总热量"
+        },
+        "health_tags": {
+            "bsonType": "array",
+            "description": "健康标签",
+            "title": "健康标签",
+            "items": {
+                "bsonType": "string",
+                "enum": [
+                    "low_purine",
+                    "low_sugar",
+                    "low_fat",
+                    "high_protein"
+                ]
+            }
+        },
+        "content": {
+            "bsonType": "string",
+            "description": "详细富文本内容",
+            "title": "详情"
+        },
+        "created_at": {
+            "bsonType": "timestamp",
+            "forceDefaultValue": {
+                "$env": "now"
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "bsonType": "object",
+    "required": [
+        "name",
+        "category"
+    ],
+    "permission": {
+        "read": true,
+        "create": "auth.role.indexOf('admin') > -1",
+        "update": "auth.role.indexOf('admin') > -1",
+        "delete": "auth.role.indexOf('admin') > -1"
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "name": {
+            "bsonType": "string",
+            "description": "食物名称",
+            "title": "名称",
+            "trim": "both"
+        },
+        "image": {
+            "bsonType": "string",
+            "description": "食物图片URL",
+            "title": "图片"
+        },
+        "purine_per_100g": {
+            "bsonType": "double",
+            "description": "每100g嘌呤含量(mg)",
+            "title": "嘌呤含量"
+        },
+        "gi_value": {
+            "bsonType": "int",
+            "description": "升糖指数(GI)",
+            "title": "GI值"
+        },
+        "calories": {
+            "bsonType": "int",
+            "description": "每100g热量(kcal)",
+            "title": "热量"
+        },
+        "category": {
+            "bsonType": "string",
+            "description": "分类：vegetables, meat, seafood, fruits, grains, others",
+            "title": "分类",
+            "enum": [
+                "vegetables",
+                "meat",
+                "seafood",
+                "fruits",
+                "grains",
+                "others"
+            ]
+        },
+        "suitable_for": {
+            "bsonType": "array",
+            "description": "适宜人群标签",
+            "title": "适宜人群",
+            "items": {
+                "bsonType": "string",
+                "enum": [
+                    "gout_friendly",
+                    "diabetes_friendly",
+                    "general"
+                ]
+            }
+        },
+        "created_at": {
+            "bsonType": "timestamp",
+            "forceDefaultValue": {
+                "$env": "now"
+            }
+        }
+    },
+    "indexes": [
+        {
+            "name": "idx_name",
+            "keys": {
+                "name": 1
+            }
+        },
+        {
+            "name": "idx_category",
+            "keys": {
+                "category": 1
+            }
+        }
+    ]
+}

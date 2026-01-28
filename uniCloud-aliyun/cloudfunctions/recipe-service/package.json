@@ -1,0 +1,7 @@
+{
+    "name": "recipe-service",
+    "version": "1.0.0",
+    "description": "Recipe Service Cloud Object",
+    "main": "index.obj.js",
+    "dependencies": {}
+}

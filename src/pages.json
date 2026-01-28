@@ -1,0 +1,67 @@
+{
+    "pages": [
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "优食健康"
+            }
+        },
+        {
+            "path": "pages/recipes/recipes",
+            "style": {
+                "navigationBarTitleText": "健康菜谱"
+            }
+        },
+        {
+            "path": "pages/profile/profile",
+            "style": {
+                "navigationBarTitleText": "我的健康"
+            }
+        },
+        {
+            "path": "pages/search/search",
+            "style": {
+                "navigationBarTitleText": "搜索"
+            }
+        },
+        {
+            "path": "pages/query/purine",
+            "style": {
+                "navigationBarTitleText": "嘌呤查询"
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "优食健康",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+        "color": "#999999",
+        "selectedColor": "#42B983",
+        "backgroundColor": "#FFFFFF",
+        "borderStyle": "black",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "static/tabbar/home.png",
+                "selectedIconPath": "static/tabbar/home-active.png"
+            },
+            {
+                "pagePath": "pages/recipes/recipes",
+                "text": "菜谱",
+                "iconPath": "static/tabbar/recipe.png",
+                "selectedIconPath": "static/tabbar/recipe-active.png"
+            },
+            {
+                "pagePath": "pages/profile/profile",
+                "text": "我的",
+                "iconPath": "static/tabbar/user.png",
+                "selectedIconPath": "static/tabbar/user-active.png"
+            }
+        ]
+    }
+}

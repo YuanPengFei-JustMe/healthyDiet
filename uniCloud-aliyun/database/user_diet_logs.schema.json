@@ -1,0 +1,89 @@
+{
+    "bsonType": "object",
+    "required": [
+        "user_id",
+        "date_str"
+    ],
+    "permission": {
+        "read": "user_id == auth.uid",
+        "create": "user_id == auth.uid",
+        "update": "user_id == auth.uid",
+        "delete": "user_id == auth.uid"
+    },
+    "properties": {
+        "_id": {
+            "description": "ID，系统自动生成"
+        },
+        "user_id": {
+            "bsonType": "string",
+            "description": "用户ID",
+            "forceDefaultValue": {
+                "$env": "uid"
+            }
+        },
+        "date_str": {
+            "bsonType": "string",
+            "description": "日期字符串 YYYY-MM-DD",
+            "title": "日期"
+        },
+        "log_time": {
+            "bsonType": "timestamp",
+            "description": "记录时间",
+            "forceDefaultValue": {
+                "$env": "now"
+            }
+        },
+        "meal_type": {
+            "bsonType": "string",
+            "description": "餐点类型",
+            "enum": [
+                "breakfast",
+                "lunch",
+                "dinner",
+                "snack"
+            ]
+        },
+        "foods": {
+            "bsonType": "array",
+            "description": "摄入食物列表",
+            "items": {
+                "bsonType": "object",
+                "required": [
+                    "food_id",
+                    "amount"
+                ],
+                "properties": {
+                    "food_id": {
+                        "bsonType": "string",
+                        "description": "关联food_library表的_id"
+                    },
+                    "food_name": {
+                        "bsonType": "string",
+                        "description": "食物名称快照"
+                    },
+                    "amount_g": {
+                        "bsonType": "int",
+                        "description": "摄入量(g)"
+                    },
+                    "purine_intake": {
+                        "bsonType": "double",
+                        "description": "摄入嘌呤(mg)"
+                    },
+                    "calories_intake": {
+                        "bsonType": "int",
+                        "description": "摄入热量(kcal)"
+                    }
+                }
+            }
+        }
+    },
+    "indexes": [
+        {
+            "name": "idx_user_date",
+            "keys": {
+                "user_id": 1,
+                "date_str": 1
+            }
+        }
+    ]
+}

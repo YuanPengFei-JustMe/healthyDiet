@@ -1,0 +1,7 @@
+{
+    "name": "food-service",
+    "version": "1.0.0",
+    "description": "Food Service Cloud Object",
+    "main": "index.obj.js",
+    "dependencies": {}
+}
