@@ -141,28 +141,28 @@ const fetchData = async () => {
       recommendedRecipes.value = res || []
     } else {
       // Fetch low purine rank
+      uni.showLoading({ title: '加载中...' })
       try {
-        // JQL查询语法
-        const res = await db.collection('food_library') // 指定表名
-          // .where('is_recommend == true')           // 查询条件：推荐的菜谱
-          // .field('title, cover_image, calories')   // 指定返回字段（优化性能）
-          // .limit(6)                                // 限制返回数量
-          // .get();                                  // 执行查询
-          .where({
-            purine_per_100g: db.command.exists(true)
-          })
+        // JQL查询语法：仅查询必要字段并使用别名以匹配模板
+        const { result } = await db.collection('food_library')
+          .where('purine_per_100g != null')
+          .field('name, purine_per_100g')
           .orderBy('purine_per_100g', 'asc')
           .limit(5)
           .get()
-        // 赋值给页面变量
-        lowPurineFoods.value = res || [];
-
+        
+        // 赋值给页面变量，手动映射字段名
+        lowPurineFoods.value = (result.data || []).map((item: any) => ({
+          ...item,
+          name: item.name,
+          purine: item.purine_per_100g
+        }));
       } catch (e) {
         console.error('查询失败：', e);
         uni.showToast({ title: '加载失败', icon: 'none' });
+      } finally {
+        uni.hideLoading()
       }
-      // const res = await request('food-service', 'getLowPurineRank')
-      // lowPurineFoods.value = res || []
     }
   } catch (e) {
     console.error('Fetch Data Failed', e)
@@ -259,7 +259,7 @@ $bg-color: #F5F7FA;
 
 /* Banner */
 .banner-swiper {
-  margin: 16px;
+  margin: 24rpx 32rpx;
   height: 150px;
   border-radius: 16rpx;
   overflow: hidden;
@@ -284,8 +284,8 @@ $bg-color: #F5F7FA;
 .grid-menu {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 8px;
-  padding-bottom: 20px;
+  margin: 0 16rpx;
+  padding-bottom: 40rpx;
 
   .grid-item {
     width: 33.33%;
@@ -320,8 +320,8 @@ $bg-color: #F5F7FA;
 
 /* Section Common */
 .section {
-  padding: 0 16px;
-  margin-bottom: 20px;
+  padding: 0 32rpx;
+  margin-bottom: 40rpx;
 
   .section-header {
     display: flex;
@@ -355,7 +355,7 @@ $bg-color: #F5F7FA;
   }
 
   &.mt-20 {
-    margin-top: 20px;
+    margin-top: 40rpx;
   }
 }
 
@@ -407,6 +407,7 @@ $bg-color: #F5F7FA;
   padding: 16px;
   display: flex;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  margin-bottom: 30rpx;
 
   .advice-content {
     flex: 1;

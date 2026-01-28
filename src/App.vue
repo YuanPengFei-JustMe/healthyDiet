@@ -14,8 +14,6 @@ export default {
 
 <style lang="scss">
 /*每个页面公共css */
-@import '@/uni.scss';
-
 body {
   background-color: #f8f8f8;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
