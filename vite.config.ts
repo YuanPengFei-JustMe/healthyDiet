@@ -9,6 +9,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
+        additionalData: `@import "uview-plus/theme.scss";`,
         api: 'modern-compiler'
       }
     }

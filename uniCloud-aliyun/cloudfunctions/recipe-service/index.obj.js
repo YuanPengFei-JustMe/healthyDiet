@@ -25,5 +25,33 @@ module.exports = {
             msg: 'success',
             data: res.data
         }
+    },
+
+    /**
+     * 搜索菜谱
+     * @param {string} keyword 关键词
+     */
+    async searchRecipes(keyword) {
+        const db = uniCloud.database()
+        const collection = db.collection('recipes')
+
+        let whereClause = {}
+        if (keyword) {
+            whereClause = db.command.or([
+                { title: new RegExp(keyword, 'i') },
+                { content: new RegExp(keyword, 'i') }
+            ])
+        }
+
+        const res = await collection
+            .where(whereClause)
+            .limit(20)
+            .get()
+
+        return {
+            code: 0,
+            msg: 'success',
+            data: res.data
+        }
     }
 }

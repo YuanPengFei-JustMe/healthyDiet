@@ -1,7 +1,7 @@
 {
-    "name": "优食健康",
-    "appid": "__UNI__CB88888",
-    "description": "痛风与糖尿病饮食管理助手",
+    "name": "轻悦食光",
+    "appid": "__UNI__C0CB5D0",
+    "description": "健康饮食管理助手",
     "versionName": "1.0.0",
     "versionCode": "100",
     "transformPx": false,
@@ -50,9 +50,11 @@
     },
     "quickapp": {},
     "mp-weixin": {
-        "appid": "",
+        "appid": "wxd905754217fee633",
         "setting": {
-            "urlCheck": false
+            "urlCheck": false,
+            "ignoreDevUnusedFiles": false,
+            "ignoreUploadUnusedFiles": false
         },
         "usingComponents": true
     },

@@ -1,7 +1,10 @@
-/* 优食健康 Color System */
+@import 'uview-plus/theme.scss';
+
+/* 轻悦食光 Color System */
 $uni-color-primary: #42B983;
 $uni-color-success: #67C23A;
-$uni-color-warning: #FF9800; /* Secondary/Emphasis */
+$uni-color-warning: #FF9800;
+/* Secondary/Emphasis */
 $uni-color-error: #F56C6C;
 $uni-color-info: #909399;
 
@@ -10,7 +13,8 @@ $uni-text-color-inverse: #fff;
 $uni-text-color-grey: #999;
 
 $uni-bg-color: #ffffff;
-$uni-bg-color-grey: #E8F5E9; /* Light Green Tint */
+$uni-bg-color-grey: #E8F5E9;
+/* Light Green Tint */
 $uni-bg-color-hover: #f1f1f1;
 
 /* Border Radius */

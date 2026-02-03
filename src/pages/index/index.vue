@@ -1,23 +1,18 @@
 <template>
   <view class="home-container">
-    <!-- Custom Navigation Bar -->
-    <view class="nav-bar" :style="{ paddingTop: statusBarHeight + 'px' }">
-      <view class="nav-content">
-        <text class="brand">优食健康</text>
-        <view class="search-bar" @click="onSearchClick">
-          <text class="placeholder">查嘌呤 / 搜菜谱</text>
-        </view>
+    <!-- Static Search Bar -->
+    <view class="static-search-container" @click="onSearchClick">
+      <view class="search-bar">
+        <text class="placeholder">搜索食材或菜谱</text>
       </view>
     </view>
-
-    <!-- Spacer for fixed Nav Bar -->
-    <view :style="{ height: (statusBarHeight + 44) + 'px' }"></view>
 
     <!-- Banner Swiper -->
     <swiper class="banner-swiper" circular indicator-dots indicator-active-color="#42B983" autoplay interval="5000">
       <swiper-item v-for="(item, index) in bannerList" :key="index" @click="onBannerClick(item)">
-        <view class="banner-item" :style="{ backgroundColor: item.bgColor }">
-          <text class="banner-text">{{ item.title }}</text>
+        <view class="banner-item" :style="{ backgroundColor: '#eee' }">
+          <image v-if="item.image" :src="item.image" mode="aspectFill" style="height: 100%;object-fit: cover;"></image>
+          <text v-else class="banner-text">{{ item.title }}</text>
         </view>
       </swiper-item>
     </swiper>
@@ -79,7 +74,7 @@
     </view>
 
     <!-- Tabbar spacer -->
-    <view class="tabbar-spacer"></view>
+    <!-- <view class="tabbar-spacer"></view> -->
   </view>
 </template>
 
@@ -91,33 +86,41 @@ const db = uniCloud.database();
 // --- Mock User Store (Pinia-like) ---
 const userStore = reactive({
   state: {
-    isLogin: false,
-    userInfo: {
+    isLogin: uni.getStorageSync('isLogin') || false,
+    userInfo: uni.getStorageSync('userInfo') || {
       nickname: 'Guest',
       goal: 'low_sugar' // 'low_sugar' | 'low_purine'
     }
   },
   login() {
+    // This is now handled by the real login page, but keeping for dev fallback
     this.state.isLogin = true
-    uni.showToast({ title: '已模拟登录', icon: 'none' })
-    fetchData() // Refresh data on login
+    uni.setStorageSync('isLogin', true)
+    fetchData()
   },
   logout() {
     this.state.isLogin = false
-    fetchData() // Refresh data on logout
+    uni.removeStorageSync('isLogin')
+    uni.removeStorageSync('userInfo')
+    fetchData()
   }
 })
 
-// --- State & Getters ---
+// --- 变量与计算属性 ---
+const keyword = ref('')
 const isLogin = computed(() => userStore.state.isLogin)
 const userGoal = computed(() => userStore.state.userInfo.goal)
-const statusBarHeight = ref<number>(20)
 
-// --- Data Lists ---
+// --- Lifecycle ---
+onLoad(() => {
+  fetchData()
+})
+
+// --- 数据列表 ---
 const bannerList = ref([
-  { title: '夏季降尿酸指南', bgColor: '#E8F5E9', url: '/pages/article/detail?id=1' },
-  { title: '糖尿病饮食误区', bgColor: '#FFF3E0', url: '/pages/article/detail?id=2' },
-  { title: '今日健康食谱', bgColor: '#E1F5FE', url: '/pages/recipes/detail?id=101' }
+  { title: '夏季降尿酸指南', image: '/static/carousel/夏季降尿酸指南.png', url: '/pages/article/detail?id=1' },
+  { title: '糖尿病饮食误区', image: '/static/carousel/糖尿病饮食误区.png', url: '/pages/article/detail?id=2' },
+  { title: '今日健康食谱', image: '/static/carousel/今日健康食谱.png', url: '/pages/recipes/detail?id=101' }
 ])
 
 const menuList = ref([
@@ -150,7 +153,7 @@ const fetchData = async () => {
           .orderBy('purine_per_100g', 'asc')
           .limit(5)
           .get()
-        
+
         // 赋值给页面变量，手动映射字段名
         lowPurineFoods.value = (result.data || []).map((item: any) => ({
           ...item,
@@ -199,9 +202,6 @@ const onBannerClick = (item: any) => {
 
 // --- Lifecycle ---
 onLoad(() => {
-  const sysInfo = uni.getSystemInfoSync()
-  statusBarHeight.value = sysInfo.statusBarHeight || 20
-
   fetchData()
 })
 </script>
@@ -216,43 +216,22 @@ $bg-color: #F5F7FA;
   background-color: $bg-color;
 }
 
-/* Custom Nav Bar */
-.nav-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
+/* Static Search Container */
+.static-search-container {
   background-color: #fff;
-  padding-bottom: 10px;
+  padding: 20rpx 32rpx;
 
-  .nav-content {
+  .search-bar {
+    height: 36px;
+    background-color: #F0F2F5;
+    border-radius: 18px;
     display: flex;
     align-items: center;
-    padding: 0 16px;
-    height: 44px;
-    /* Standard Nav Height */
+    padding-left: 24rpx;
 
-    .brand {
-      font-size: 18px;
-      font-weight: bold;
-      color: $primary-color;
-      margin-right: 16px;
-    }
-
-    .search-bar {
-      flex: 1;
-      height: 32px;
-      background-color: #F0F2F5;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      padding-left: 12px;
-
-      .placeholder {
-        font-size: 13px;
-        color: #999;
-      }
+    .placeholder {
+      font-size: 14px;
+      color: #999;
     }
   }
 }
@@ -513,7 +492,7 @@ $bg-color: #F5F7FA;
 }
 
 .tabbar-spacer {
-  height: 50px;
-  padding-bottom: env(safe-area-inset-bottom);
+  // height: 50px;
+  // padding-bottom: env(safe-area-inset-bottom);
 }
 </style>

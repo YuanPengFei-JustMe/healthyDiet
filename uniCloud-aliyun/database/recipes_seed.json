@@ -1,0 +1,791 @@
+{
+    "title": "清蒸鲈鱼",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_108",
+            "name": "鲈鱼",
+            "amount": "500g"
+        },
+        {
+            "food_id": "f_118",
+            "name": "姜葱",
+            "amount": "20g"
+        }
+    ],
+    "steps": [
+        "鲈鱼清理干净，背部划几刀",
+        "盘底铺姜葱,放上鱼,水开蒸8分钟"
+    ],
+    "total_calories": 180,
+    "health_tags": [
+        "low_purine",
+        "low_fat",
+        "high_protein"
+    ],
+    "content": "<p>清蒸最能保留鱼肉的鲜美,且嘌呤含量相对较低。</p>"
+}
+{
+    "title": "凉拌黄瓜",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_101",
+            "name": "黄瓜",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_119",
+            "name": "蒜末",
+            "amount": "5g"
+        }
+    ],
+    "steps": [
+        "黄瓜洗净拍碎切段",
+        "加入蒜末、少许盐和醋拌匀即可"
+    ],
+    "total_calories": 40,
+    "health_tags": [
+        "low_purine",
+        "low_sugar",
+        "low_fat"
+    ],
+    "content": "<p>清爽解腻,是夏季必备的快手凉菜。</p>"
+}
+{
+    "title": "西红柿炒鸡蛋",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_102",
+            "name": "西红柿",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_116",
+            "name": "鸡蛋",
+            "amount": "2个"
+        }
+    ],
+    "steps": [
+        "鸡蛋打散炒熟盛出",
+        "西红柿炒出汁,倒入鸡蛋翻炒均匀"
+    ],
+    "total_calories": 180,
+    "health_tags": [
+        "low_purine",
+        "balanced"
+    ],
+    "content": "<p>经典国民菜,酸甜开胃,营养均衡。</p>"
+}
+{
+    "title": "白灼虾",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_109",
+            "name": "基围虾",
+            "amount": "300g"
+        },
+        {
+            "food_id": "f_118",
+            "name": "姜片",
+            "amount": "10g"
+        }
+    ],
+    "steps": [
+        "水开加姜片料酒",
+        "放入虾煮至变色弯曲即可捞出"
+    ],
+    "total_calories": 150,
+    "health_tags": [
+        "low_fat",
+        "high_protein"
+    ],
+    "content": "<p>原汁原味,蛋白质丰富,适合减脂期食用。</p>"
+}
+{
+    "title": "菠菜蛋花汤",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_104",
+            "name": "菠菜",
+            "amount": "150g"
+        },
+        {
+            "food_id": "f_116",
+            "name": "鸡蛋",
+            "amount": "1个"
+        }
+    ],
+    "steps": [
+        "菠菜焯水去草酸",
+        "水开淋入蛋液,放入菠菜调味"
+    ],
+    "total_calories": 80,
+    "health_tags": [
+        "low_purine",
+        "low_fat",
+        "low_sugar"
+    ],
+    "content": "<p>简单的快手汤,补充维生素和膳食纤维。</p>"
+}
+{
+    "title": "香煎鸡胸肉",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_105",
+            "name": "鸡胸肉",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_120",
+            "name": "黑胡椒",
+            "amount": "2g"
+        }
+    ],
+    "steps": [
+        "鸡胸肉腌制15分钟",
+        "平底锅少油小火煎至两面金黄"
+    ],
+    "total_calories": 250,
+    "health_tags": [
+        "high_protein",
+        "low_fat",
+        "diabetes_friendly"
+    ],
+    "content": "<p>健身人士最爱,低脂高蛋白,饱腹感强。</p>"
+}
+{
+    "title": "蒜蓉西兰花",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_103",
+            "name": "西兰花",
+            "amount": "300g"
+        },
+        {
+            "food_id": "f_119",
+            "name": "蒜蓉",
+            "amount": "10g"
+        }
+    ],
+    "steps": [
+        "西兰花焯水备用",
+        "爆香蒜蓉,倒入西兰花快速翻炒"
+    ],
+    "total_calories": 90,
+    "health_tags": [
+        "low_purine",
+        "low_fat",
+        "high_fiber"
+    ],
+    "content": "<p>清脆爽口,富含维生素C和抗氧化物质。</p>"
+}
+{
+    "title": "豆腐鲫鱼汤",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_118",
+            "name": "豆腐",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_121",
+            "name": "鲫鱼",
+            "amount": "1条"
+        }
+    ],
+    "steps": [
+        "鲫鱼煎至两面金黄",
+        "加开水炖煮至汤白,加入豆腐"
+    ],
+    "total_calories": 220,
+    "health_tags": [
+        "high_protein",
+        "balanced"
+    ],
+    "content": "<p>汤鲜味美,豆腐嫩滑,营养丰富。</p>"
+}
+{
+    "title": "芹菜炒瘦肉",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_122",
+            "name": "芹菜",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_106",
+            "name": "瘦肉",
+            "amount": "100g"
+        }
+    ],
+    "steps": [
+        "瘦肉切丝腌制",
+        "热油炒熟肉丝,加入芹菜段翻炒"
+    ],
+    "total_calories": 280,
+    "health_tags": [
+        "diabetes_friendly",
+        "high_fiber"
+    ],
+    "content": "<p>芹菜富含粗纤维,有助于控制血糖和血压。</p>"
+}
+{
+    "title": "燕麦牛奶粥",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_113",
+            "name": "燕麦片",
+            "amount": "50g"
+        },
+        {
+            "food_id": "f_117",
+            "name": "低脂牛奶",
+            "amount": "250ml"
+        }
+    ],
+    "steps": [
+        "燕麦加水煮开",
+        "倒入牛奶煮至微沸即可"
+    ],
+    "total_calories": 280,
+    "health_tags": [
+        "diabetes_friendly",
+        "low_gi"
+    ],
+    "content": "<p>完美的低GI早餐,饱腹感持久。</p>"
+}
+{
+    "title": "凉拌黑木耳",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_123",
+            "name": "黑木耳",
+            "amount": "50g(干)"
+        },
+        {
+            "food_id": "f_119",
+            "name": "蒜醋",
+            "amount": "适量"
+        }
+    ],
+    "steps": [
+        "木耳泡发焯水煮熟",
+        "过凉水后加入调料拌匀"
+    ],
+    "total_calories": 60,
+    "health_tags": [
+        "low_fat",
+        "low_purine",
+        "heart_healthy"
+    ],
+    "content": "<p>血管清道夫,口感爽脆。</p>"
+}
+{
+    "title": "三文鱼波奇饭",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_108",
+            "name": "三文鱼",
+            "amount": "100g"
+        },
+        {
+            "food_id": "f_114",
+            "name": "糙米饭",
+            "amount": "150g"
+        },
+        {
+            "food_id": "f_124",
+            "name": "牛油果",
+            "amount": "半个"
+        }
+    ],
+    "steps": [
+        "三文鱼切丁,牛油果切片",
+        "铺在糙米饭上,淋少许酱油"
+    ],
+    "total_calories": 450,
+    "health_tags": [
+        "balanced",
+        "healthy_fats"
+    ],
+    "content": "<p>时尚健康的轻食,Omega-3脂肪酸丰富。</p>"
+}
+{
+    "title": "家常豆腐",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_118",
+            "name": "老豆腐",
+            "amount": "300g"
+        },
+        {
+            "food_id": "f_125",
+            "name": "青红椒",
+            "amount": "50g"
+        }
+    ],
+    "steps": [
+        "豆腐切片煎至两面微黄",
+        "加入青红椒和调料烧制入味"
+    ],
+    "total_calories": 320,
+    "health_tags": [
+        "vegetarian",
+        "gout_friendly"
+    ],
+    "content": "<p>植物蛋白优质来源,家常下饭菜。</p>"
+}
+{
+    "title": "苦瓜炒蛋",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_126",
+            "name": "苦瓜",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_116",
+            "name": "鸡蛋",
+            "amount": "2个"
+        }
+    ],
+    "steps": [
+        "苦瓜去瓤切片焯水",
+        "鸡蛋炒熟后加入苦瓜同炒"
+    ],
+    "total_calories": 190,
+    "health_tags": [
+        "diabetes_friendly",
+        "low_sugar"
+    ],
+    "content": "<p>苦瓜有助降糖,清热去火。</p>"
+}
+{
+    "title": "杂粮饭",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_114",
+            "name": "糙米",
+            "amount": "50g"
+        },
+        {
+            "food_id": "f_115",
+            "name": "大米",
+            "amount": "50g"
+        },
+        {
+            "food_id": "f_138",
+            "name": "紫米",
+            "amount": "20g"
+        }
+    ],
+    "steps": [
+        "杂粮提前浸泡2小时",
+        "混合大米正常煮饭"
+    ],
+    "total_calories": 260,
+    "health_tags": [
+        "high_fiber",
+        "diabetes_friendly"
+    ],
+    "content": "<p>粗细搭配,平稳餐后血糖。</p>"
+}
+{
+    "title": "水煮秋葵",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_119",
+            "name": "秋葵",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_127",
+            "name": "酱油",
+            "amount": "少许"
+        }
+    ],
+    "steps": [
+        "整根秋葵焯水3分钟捞出",
+        "淋上酱油和蒜末即可"
+    ],
+    "total_calories": 60,
+    "health_tags": [
+        "low_gi",
+        "diabetes_friendly"
+    ],
+    "content": "<p>秋葵黏液保护胃黏膜,辅助降糖。</p>"
+}
+{
+    "title": "冬瓜排骨汤",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_128",
+            "name": "冬瓜",
+            "amount": "300g"
+        },
+        {
+            "food_id": "f_129",
+            "name": "排骨",
+            "amount": "200g"
+        }
+    ],
+    "steps": [
+        "排骨焯水去血沫",
+        "炖煮40分钟后加入冬瓜至熟"
+    ],
+    "total_calories": 350,
+    "health_tags": [
+        "digest_friendly",
+        "traditional"
+    ],
+    "content": "<p>利尿消肿,汤清味美。</p>"
+}
+{
+    "title": "香蕉燕麦饼",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_130",
+            "name": "香蕉",
+            "amount": "1根"
+        },
+        {
+            "food_id": "f_113",
+            "name": "燕麦",
+            "amount": "50g"
+        }
+    ],
+    "steps": [
+        "香蕉压泥混合燕麦",
+        "整理成小饼,烤箱180度烤20分钟"
+    ],
+    "total_calories": 220,
+    "health_tags": [
+        "low_fat",
+        "snack"
+    ],
+    "content": "<p>无糖无油的健康小零食。</p>"
+}
+{
+    "title": "虾仁蒸蛋",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_109",
+            "name": "虾仁",
+            "amount": "50g"
+        },
+        {
+            "food_id": "f_116",
+            "name": "鸡蛋",
+            "amount": "2个"
+        }
+    ],
+    "steps": [
+        "蛋液加温水搅匀过筛",
+        "蒸至凝固放上虾仁再蒸3分钟"
+    ],
+    "total_calories": 180,
+    "health_tags": [
+        "high_protein",
+        "kid_friendly"
+    ],
+    "content": "<p>口感嫩滑,老少皆宜。</p>"
+}
+{
+    "title": "凉拌海带丝",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_131",
+            "name": "海带丝",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_119",
+            "name": "蒜醋",
+            "amount": "适量"
+        }
+    ],
+    "steps": [
+        "海带丝煮熟过冷水",
+        "加入调料拌匀腌制片刻"
+    ],
+    "total_calories": 90,
+    "health_tags": [
+        "low_purine",
+        "low_fat"
+    ],
+    "content": "<p>含碘丰富,爽口开胃。</p>"
+}
+{
+    "title": "全麦三明治",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_132",
+            "name": "全麦面包",
+            "amount": "2片"
+        },
+        {
+            "food_id": "f_116",
+            "name": "煎蛋",
+            "amount": "1个"
+        },
+        {
+            "food_id": "f_101",
+            "name": "生菜",
+            "amount": "2片"
+        }
+    ],
+    "steps": [
+        "组装面包、蔬菜和蛋白质",
+        "对角切开即可"
+    ],
+    "total_calories": 300,
+    "health_tags": [
+        "balanced",
+        "breakfast"
+    ],
+    "content": "<p>快捷营养早餐,纤维丰富。</p>"
+}
+{
+    "title": "清炒时蔬",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_133",
+            "name": "菜心/芥兰",
+            "amount": "300g"
+        },
+        {
+            "food_id": "f_119",
+            "name": "蒜末",
+            "amount": "5g"
+        }
+    ],
+    "steps": [
+        "热锅少油爆香蒜末",
+        "大火快炒青菜至断生"
+    ],
+    "total_calories": 80,
+    "health_tags": [
+        "low_calorie",
+        "vegetarian"
+    ],
+    "content": "<p>每日必备绿叶菜,补充维生素。</p>"
+}
+{
+    "title": "玉米排骨汤",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_134",
+            "name": "甜玉米",
+            "amount": "1根"
+        },
+        {
+            "food_id": "f_129",
+            "name": "排骨",
+            "amount": "200g"
+        }
+    ],
+    "steps": [
+        "排骨炖煮30分钟",
+        "加入玉米段继续炖20分钟"
+    ],
+    "total_calories": 380,
+    "health_tags": [
+        "kid_friendly",
+        "sweet_flavor"
+    ],
+    "content": "<p>汤汁甘甜,玉米提供粗粮碳水。</p>"
+}
+{
+    "title": "蒸紫薯",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_135",
+            "name": "紫薯",
+            "amount": "200g"
+        }
+    ],
+    "steps": [
+        "紫薯洗净去皮或带皮",
+        "上锅蒸20分钟至筷子穿透"
+    ],
+    "total_calories": 260,
+    "health_tags": [
+        "high_fiber",
+        "antioxidant"
+    ],
+    "content": "<p>富含花青素,优质主食替代。</p>"
+}
+{
+    "title": "番茄龙利鱼",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_136",
+            "name": "龙利鱼",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_102",
+            "name": "番茄",
+            "amount": "2个"
+        }
+    ],
+    "steps": [
+        "番茄炒出红油加水煮开",
+        "放入鱼片煮熟即可"
+    ],
+    "total_calories": 240,
+    "health_tags": [
+        "low_fat",
+        "kid_friendly"
+    ],
+    "content": "<p>酸甜无刺,适合老人小孩。</p>"
+}
+{
+    "title": "彩椒炒鸡丁",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_105",
+            "name": "鸡胸肉",
+            "amount": "150g"
+        },
+        {
+            "food_id": "f_125",
+            "name": "红黄彩椒",
+            "amount": "100g"
+        }
+    ],
+    "steps": [
+        "鸡丁滑炒变色",
+        "加入彩椒块快速翻炒断生"
+    ],
+    "total_calories": 220,
+    "health_tags": [
+        "vitamin_rich",
+        "colorful"
+    ],
+    "content": "<p>色彩丰富,富含维生素A和C。</p>"
+}
+{
+    "title": "银耳莲子羹",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_137",
+            "name": "干银耳",
+            "amount": "10g"
+        },
+        {
+            "food_id": "f_138",
+            "name": "莲子",
+            "amount": "20g"
+        }
+    ],
+    "steps": [
+        "银耳泡发撕小朵",
+        "与莲子同煮至胶质析出"
+    ],
+    "total_calories": 120,
+    "health_tags": [
+        "dessert",
+        "low_sugar"
+    ],
+    "content": "<p>滋阴润肺,天然植物胶原。</p>"
+}
+{
+    "title": "清炖羊肉萝卜",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_139",
+            "name": "羊肉",
+            "amount": "200g"
+        },
+        {
+            "food_id": "f_140",
+            "name": "白萝卜",
+            "amount": "200g"
+        }
+    ],
+    "steps": [
+        "羊肉焯水去膻",
+        "加入萝卜炖煮1小时至软烂"
+    ],
+    "total_calories": 300,
+    "health_tags": [
+        "warm_food",
+        "winter_special"
+    ],
+    "content": "<p>温补驱寒,萝卜解腻助消化。</p>"
+}
+{
+    "title": "韭菜炒河虾",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_141",
+            "name": "小河虾",
+            "amount": "150g"
+        },
+        {
+            "food_id": "f_142",
+            "name": "韭菜",
+            "amount": "100g"
+        }
+    ],
+    "steps": [
+        "河虾炒至酥脆",
+        "加入韭菜段快速翻炒出锅"
+    ],
+    "total_calories": 180,
+    "health_tags": [
+        "calcium_rich",
+        "men_health"
+    ],
+    "content": "<p>补钙补肾,传统家常菜。</p>"
+}
+{
+    "title": "蒸红薯",
+    "cover_image": "",
+    "ingredients": [
+        {
+            "food_id": "f_143",
+            "name": "红薯",
+            "amount": "200g"
+        }
+    ],
+    "steps": [
+        "红薯洗净切段",
+        "蒸锅大火蒸20分钟"
+    ],
+    "total_calories": 180,
+    "health_tags": [
+        "high_fiber",
+        "gout_friendly"
+    ],
+    "content": "<p>优质碳水,促进肠道蠕动。</p>"
+}
